@@ -10,7 +10,6 @@ export function makeBlankQuestion(
     name: string,
     type: QuestionType
 ): Question {
-<<<<<<< HEAD
     return {
         id: id,
         name: name,
@@ -21,9 +20,6 @@ export function makeBlankQuestion(
         points: 1,
         published: false
     };
-=======
-    return {};
->>>>>>> origin/task-forms
 }
 
 /**
@@ -34,12 +30,9 @@ export function makeBlankQuestion(
  * HINT: Look up the `trim` and `toLowerCase` functions.
  */
 export function isCorrect(question: Question, answer: string): boolean {
-<<<<<<< HEAD
     if (answer.toLowerCase().trim() === question.expected.toLowerCase()) {
         return true;
     }
-=======
->>>>>>> origin/task-forms
     return false;
 }
 
@@ -50,7 +43,6 @@ export function isCorrect(question: Question, answer: string): boolean {
  * be exactly one of the options.
  */
 export function isValid(question: Question, answer: string): boolean {
-<<<<<<< HEAD
     if (question.type === "short_answer_question") {
         return true;
     }
@@ -58,9 +50,6 @@ export function isValid(question: Question, answer: string): boolean {
         (option: string): boolean => option === answer
     );
     return valid;
-=======
-    return false;
->>>>>>> origin/task-forms
 }
 
 /**
@@ -70,11 +59,7 @@ export function isValid(question: Question, answer: string): boolean {
  * name "My First Question" would become "9: My First Q".
  */
 export function toShortForm(question: Question): string {
-<<<<<<< HEAD
     return String(question.id) + ": " + question.name.slice(0, 10);
-=======
-    return "";
->>>>>>> origin/task-forms
 }
 
 /**
@@ -95,7 +80,6 @@ export function toShortForm(question: Question): string {
  * Check the unit tests for more examples of what this looks like!
  */
 export function toMarkdown(question: Question): string {
-<<<<<<< HEAD
     return question.type === "short_answer_question"
         ? "# " + question.name + "\n" + question.body
         : "# " +
@@ -104,9 +88,6 @@ export function toMarkdown(question: Question): string {
               question.body +
               "\n- " +
               question.options.join("\n- ");
-=======
-    return "";
->>>>>>> origin/task-forms
 }
 
 /**
@@ -114,11 +95,7 @@ export function toMarkdown(question: Question): string {
  * `newName`.
  */
 export function renameQuestion(question: Question, newName: string): Question {
-<<<<<<< HEAD
     return { ...question, name: newName };
-=======
-    return question;
->>>>>>> origin/task-forms
 }
 
 /**
@@ -127,11 +104,7 @@ export function renameQuestion(question: Question, newName: string): Question {
  * published; if it was published, now it should be not published.
  */
 export function publishQuestion(question: Question): Question {
-<<<<<<< HEAD
     return { ...question, published: !question.published };
-=======
-    return question;
->>>>>>> origin/task-forms
 }
 
 /**
@@ -141,16 +114,12 @@ export function publishQuestion(question: Question): Question {
  * The `published` field should be reset to false.
  */
 export function duplicateQuestion(id: number, oldQuestion: Question): Question {
-<<<<<<< HEAD
     return {
         ...oldQuestion,
         id: id,
         name: "Copy of " + oldQuestion.name,
         published: false
     };
-=======
-    return oldQuestion;
->>>>>>> origin/task-forms
 }
 
 /**
@@ -161,12 +130,8 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
  * Check out the subsection about "Nested Fields" for more information.
  */
 export function addOption(question: Question, newOption: string): Question {
-<<<<<<< HEAD
     let options: string[] = [...question.options, newOption];
     return { ...question, options: options };
-=======
-    return question;
->>>>>>> origin/task-forms
 }
 
 /**
@@ -183,7 +148,6 @@ export function mergeQuestion(
     contentQuestion: Question,
     { points }: { points: number }
 ): Question {
-<<<<<<< HEAD
     return {
         ...contentQuestion,
         id: id,
@@ -191,7 +155,4 @@ export function mergeQuestion(
         points: points,
         published: false
     };
-=======
-    return contentQuestion;
->>>>>>> origin/task-forms
 }
