@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 
+=======
+>>>>>>> temp-solved-forms
 import { Button } from "react-bootstrap";
 
 export function Counter(): React.JSX.Element {

@@ -7,7 +7,11 @@ const PEOPLE = [
     "Ada Lovelace",
     "Charles Babbage",
     "Barbara Liskov",
+<<<<<<< HEAD
     "Margaret Hamilton"
+=======
+    "Margaret Hamilton",
+>>>>>>> temp-solved-forms
 ];
 
 export function ChooseTeam(): React.JSX.Element {
