@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 
 import { Button } from "react-bootstrap";
 
@@ -16,4 +17,10 @@ export function RevealAnswer(): React.JSX.Element {
             {visble && <div>42</div>}
         </div>
     );
+=======
+import { Button } from "react-bootstrap";
+
+export function RevealAnswer(): React.JSX.Element {
+    return <div>Reveal Answer</div>;
+>>>>>>> origin/task-forms
 }

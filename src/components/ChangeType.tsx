@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 
 import { Button } from "react-bootstrap";
 
@@ -27,4 +28,11 @@ export function ChangeType(): React.JSX.Element {
             )}
         </div>
     );
+=======
+import { Button } from "react-bootstrap";
+import { QuestionType } from "../interfaces/question";
+
+export function ChangeType(): React.JSX.Element {
+    return <div>Change Type</div>;
+>>>>>>> origin/task-forms
 }
