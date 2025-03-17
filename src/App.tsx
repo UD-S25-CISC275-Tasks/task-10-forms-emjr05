@@ -36,11 +36,7 @@ function App(): React.JSX.Element {
                 expectedAnswer="b"
             ></MultipleChoiceQuestion>
             <hr></hr>
-<<<<<<< HEAD
-            {/* <DoubleHalf></DoubleHalf> */}
-=======
             { <DoubleHalf></DoubleHalf> }
->>>>>>> temp-solved-forms
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
